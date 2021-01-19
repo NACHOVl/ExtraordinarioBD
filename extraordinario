@@ -3,6 +3,7 @@
 \usepackage{hyperref}
 \usepackage[dvipsnames]{xcolor}
 
+
 \usepackage{amsmath,amsfonts,amssymb}   %% AMS mathematics macros
 
 %% Title Information.
@@ -23,15 +24,18 @@ This document implements Trailers Data Model.
 
 \section{Data Model Description}
 
+
+
 \textcolor{blue}{operadores} de trailers (\textcolor{red}{ idoperador, numerolicencia, curp, nombre, fecha_alta } ) \\
 \textcolor{blue}{trailers}  (\textcolor{red}{ idunidad, modelo, marca, placas} ) \\
 \textcolor{blue}{viajes}  (\textcolor{red}{ idviaje, idoperador, idunidad, origen, destino, km, fecha_viaje} ) \\
 
 operadores \textcolor{yellow}{manejan} 1 trailer y \textcolor{yellow}{realizan} n viajes
 
+
 \section{E-R Model}
 
-viaje trailer operador
+trailers.
 
 \begin{figure}[h]
      \includegraphics[scale=0.6]{extraordinario.png}
