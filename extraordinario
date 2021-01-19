@@ -1,0 +1,53 @@
+\documentclass[10pt]{article}         %% What type of document you're writing.
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+
+
+\usepackage{amsmath,amsfonts,amssymb}   %% AMS mathematics macros
+
+%% Title Information.
+
+\title{extraordinario}
+\author{Ignacio Varela Lucho}
+%% \date{19 ene 2021}           %% By default, LaTeX uses the current date
+
+%%%%% The Document
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This document implements Trailers Data Model.
+\end{abstract}
+
+\section{Data Model Description}
+
+
+
+\textcolor{blue}{operadores} de trailers (\textcolor{red}{ idoperador, numerolicencia, curp, nombre, fecha_alta } ) \\
+\textcolor{blue}{trailers}  (\textcolor{red}{ idunidad, modelo, marca, placas} ) \\
+\textcolor{blue}{viajes}  (\textcolor{red}{ idviaje, idoperador, idunidad, origen, destino, km, fecha_viaje} ) \\
+
+operadores \textcolor{yellow}{manejan} 1 trailer y \textcolor{yellow}{realizan} n viajes
+
+
+\section{E-R Model}
+
+trailers.
+
+\begin{figure}[h]
+     \includegraphics[scale=0.6]{extraordinario.png}
+     \caption{Extraordinario E-R Model}
+\end{figure}
+   
+\section{Relational Model}
+Trailers Relational Model
+
+\begin{figure}[h]
+     \includegraphics[scale=0.6]{extraordinario2.png}
+     \caption{extraordinario2 relational}
+\end{figure}
+
+\end{document}
